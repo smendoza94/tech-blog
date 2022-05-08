@@ -14,7 +14,7 @@ This site is built completely from scratch and deployed it to Heroku. This app w
 
 AS A developer who writes about tech, I WANT a CMS-style blog site, SO THAT I can publish articles, blog posts, and my thoughts and opinions.
 
-# Node Packages include
+### Node Packages Include
 
 1. The Express-Handlebars package, to use Handlebars.js in Views
 2. The MySQL2 package, to run SQL database commands
@@ -30,7 +30,7 @@ AS A developer who writes about tech, I WANT a CMS-style blog site, SO THAT I ca
 
 ![demo thumbnail](/assets/img/demo_of_program.gif)
 
-## Acceptance Criteria
+## Uses
 
 - [ ] Default homepage that includes existing blog posts
 
