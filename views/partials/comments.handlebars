@@ -1,0 +1,17 @@
+{{! note that post.comments is an array not an object, therefore 
+must use "this" to iterate through and display all comments }}
+<div class="comments">
+  {{#each this}}
+    <section class="comment">
+      <div class="meta">
+        {{user.username}}
+        on
+        {{! call the function format_date from the server.js exphbs.create to format created_at }}
+        {{format_date created_at}}
+      </div>
+      <div class="text">
+        {{comment_text}}
+      </div>
+    </section>
+  {{/each}}
+</div>

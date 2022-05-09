@@ -1,0 +1,11 @@
+<ol class="post-list">
+  {{! loop through the posts array to get each post and display it below }}
+  {{#each posts as |post|}}
+    <li>
+      {{!-- use the post-info partial here to repeat the info layout --}}
+      {{!-- partial declared as {{> }}, then the file name and object to be passed in --}}
+      {{> post-info post }}
+    </li>
+    {{! close the posts loop array }}
+  {{/each}}
+</ol>

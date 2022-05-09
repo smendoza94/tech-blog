@@ -1,0 +1,22 @@
+{{! partials should only use property of the object i.e. object.<property> }}
+{{! the object to be used is declared in the parent file }}
+<article class="post">
+  <div class="title">
+    <a href="{{post_url}}" target="_blank">{{title}}</a>
+    {{! call the function format_url from the server.js exphbs.create to format post_url shorter }}
+    <span>({{format_url post_url}})</span>
+  </div>
+  <div class="meta">
+    {{vote_count}}
+    {{! replace "point(s)" with format_plural that takes in "point" string and makes it plural if vote_count > 1 }}
+    {{format_plural "point" vote_count}}
+    by
+    {{user.username}}
+    on
+    {{! call the function format_date from the server.js exphbs.create to format created_at }}
+    {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
+  </div>
+</article>
