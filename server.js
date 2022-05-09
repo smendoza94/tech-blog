@@ -12,7 +12,7 @@ const helpers = require("./utils/helpers");
 const path = require("path");
 const exphbs = require("express-handlebars");
 // pass the helpers and auth js files into exphbs.create for use in handlebars templates
-const hbs = exphbs.create({ helpers, auth });
+const hbs = exphbs.create({ helpers });
 
 // cookies and sessions requirements
 const session = require("express-session");
